@@ -10,7 +10,7 @@ export default function App() {
         <Search />
         <div class="row">
           <div class="col-6">
-            <h1 id="city"></h1>
+            <h1 id="city">City</h1>
           </div>
           <div class="col">
             <p>
@@ -25,13 +25,14 @@ export default function App() {
         <a
           href="https://www.github.com/amccaskey9/vanilla-weather-app"
           target="_blank"
+          rel="noreferrer"
         >
           Open-source code
         </a>{" "}
         by Aiyana McCaskey
         <div>
           Hosted on{" "}
-          <a href="http://www.netlify.com" target="_blank">
+          <a href="http://www.netlify.com" target="_blank" rel="noreferrer">
             Netlify
           </a>
         </div>

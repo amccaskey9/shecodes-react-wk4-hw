@@ -16,7 +16,12 @@ export default function Current() {
         </ul>
       </div>
       <div class="col">
-        <img src="#" class="weather-icon" id="weather-icon" />
+        <img
+          src="#"
+          class="weather-icon"
+          alt="weather-icon"
+          id="weather-icon"
+        />
       </div>
       <div class="row">
         <ul>
