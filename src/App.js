@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
+import Search from "./Search.js";
+import Weather from "./Weather.js";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <div class="container">
+      <div class="weather-app">
+        <Search />
+        <div class="row">
+          <div class="col-6">
+            <h1 id="city"></h1>
+          </div>
+          <div class="col">
+            <p>
+              Updated: <span id="date"></span>
+            </p>
+          </div>
+        </div>
+        <Weather />
+      </div>
+      <div class="weather-forecast" id="forecast"></div>
+      <footer>
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          href="https://www.github.com/amccaskey9/vanilla-weather-app"
           target="_blank"
-          rel="noopener noreferrer"
         >
-          Learn React
-        </a>
-      </header>
+          Open-source code
+        </a>{" "}
+        by Aiyana McCaskey
+        <div>
+          Hosted on{" "}
+          <a href="http://www.netlify.com" target="_blank">
+            Netlify
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
-
-export default App;

@@ -1,0 +1,7 @@
+.weather-app .current-temp {
+  font-size: 23px;
+}
+
+.condition {
+  text-transform: capitalize;
+}
